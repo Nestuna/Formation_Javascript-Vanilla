@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    body {
+      padding: 50px;
+    }
+
+    article {
+      margin: auto;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    .link {
+      float: right;
+      margin-left: 30px;
+    }
+
+    span {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>  
+  <article id="parent">
+    <a class="link" id="child" href="#">Cliquez ici</a>
+    <p>Battle d'événement !</p>
+    Parent : <span id="parent-count">0</span>
+    Enfant : <span id="child-count">0</span>
+  </article>
+  
+  <script type="text/javascript" src="event.js"></script>
+</body>
+</html>
+

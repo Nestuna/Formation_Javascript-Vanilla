@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM - Formation OCR: Javascript Vanilla</title>
+</head>
+<body>
+
+  <p id="my-anchor">Mon Ancre</p>
+  <div>
+    <div class="content">Contenu 1</div>
+    <div class="content">Contenu 2</div>
+    <div class="content">Contenu 3</div>
+  </div>
+  <article>Contenu 1</article>
+  <article>Contenu 2</article>
+  <article>Contenu 3</article>
+
+  <div id="myID">
+    <p>
+      <span><a href="#">Lien 1</a></span>
+      <a href="#">Lien 2</a>
+      <span><a href="#">Lien 3</a></span>
+    </p>
+    <p class="article">
+      <span><a href="#">Lien 4</a></span>
+      <span><a href="#">Lien 5</a></span>
+      <a href="#">Lien 6</a>
+    </p>
+
+  </div>
+  <!-- JS -->
+  <script>
+    const myAnchor = document.getElementById('my-anchor'),
+          contents = document.getElementsByClassName('content'),
+          articles = document.getElementsByTagName('article'),
+          elt = document.querySelector('#myID p.article')
+
+    contents[0].textContent= 'Coucou'
+    myAnchor.innerHTML = '<strong>MON ANCRE</strong>'
+
+    console.log(elt.previousElementSibling)
+
+  </script>
+</body>
+</html>
